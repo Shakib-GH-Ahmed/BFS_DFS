@@ -1,0 +1,72 @@
+Task1a:
+
+#Task1a-Solution
+#1- First we create adjacency matrix with the help of the number of vertices
+#2- Then we add the cost in that adjacency matrix
+#3- Then to forming the adjacnecy matrix along with the values in the output.
+
+
+Task1b:
+
+
+#Task1b-Solution
+#1- First we create adjacency matrix with the help of the number of vertices
+#2- The line where edge between node and cost come the I gave a condition 
+    #if there any cost already there in that n2 list it will create a list for not overlaping any number
+#3- Next for loop indicates 
+    # if we get 0, we go forward through the list
+    #else we break the list
+#4- Create a new list named new_lst where we appending the values, if it's a list we go through the index of the list 
+
+
+
+Task-2:
+
+#creating empty list adjacency with the value of cities
+#appending values of index 1 in the first index list
+#Function consists of adj list and a starting value
+#append start value to a list named 'q' 
+#inside the loop it checks the adjacency's qth index either greater than 0 or <= 0
+    #if it's >0, run a loop and check the list of v either takes 0, than it appends the values of that index to 'q'
+    #if it's <=0, we just pop the q list and save it to a variable and add to a empty string with that variable to 'emp'
+
+
+Task-3:
+
+#1- creating adjacency matrix and adding the bidirectional road to the list using n1,n2
+#2- initially all the vertices would be White
+#3- In the method whenever we entering, we setting up the color of the vertices in the list to Black
+    #in the loop we deonating each vertices of the adjacency list
+    #if the color of the verice is White, we use recursion to get back to the DFS method
+
+
+Task-4:
+
+#Initializing two dictionary and one list
+#1st dictionary takes the key as n1 and value as n2
+#2nd dictionary makes all color to white at first
+#In the function(DFS) for the white color it calls the function(Color_DFS) recursively
+#if the n1 matches with the 1st dictionary keys we run a loop in the dictionary index
+#It allows three conditions inside the loop and finds the cycle
+#if it not enters the condition of the keys it makes the color of that node to black
+
+Task-5:
+
+#we start the enque method after initializing the lst item to gray
+#In the while loop (34 line), if it's not true we started dequeue
+#Checking if temp is in the keys or not for the single vertice
+#if its in the dictionary keys if run a loop of each vertice in the list and enqueue that
+#if the color is already white it makes it gray and increment the value of that visited dictionary
+#Initialize a new list and run a loop when it's not equal to 1, outside the loop we append 1
+#append the values to the new list 'final' and it makes the output to the y file
+
+#Task-6:
+
+#2 variable takes the row and column value
+#run a loop with row value and append next line inputs to the 'mat' list 
+#run nested loop, 
+    # if it matches '#', setting the dictionary key value to black
+    #else, setting the dictionary key value to white
+#In the function for finding 'D' we incrementing the diamond count and append to new list
+#for each white in the dictionary values, we use condition and each of the conditions takes a recursive call
+
